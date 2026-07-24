@@ -3,42 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>E.V. Sai Ganesh | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Frontend Developer | Learning to build cool things</p>
+<header id="header">
+    <nav class="container">
+        <a href="#home" class="logo">MANEPALLY <span>SAI KRISHNA</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Write 2-3 sentences about who you are, what you're learning, and what you enjoy building.</p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>Project One</h3>
-            <p>Short description of what it does.</p>
-            <a href="https://github.com/yourusername/project-one" target="_blank">View Code</a>
+<section id="home" class="hero container">
+    <div class="hero-text fade-up">
+        <p class="tag">Hello</p>
+        <h1>I'm <span>Sai Krishna Manepally</span></h1>
+        <h2>a <span>Software Development Engineer in Test</span></h2>
+        <p class="desc">6+ years of experience in Software Quality Assurance, Test Automation, and Validation of Web, Mobile (iOS & Android), API, and enterprise-scale applications. Skilled in building scalable automation frameworks using Selenium, Appium, WebDriverIO, and BDD across Agile CI/CD environments.</p>
+        <div class="btn-row">
+            <a href="#contact" class="btn btn-filled">Hire Me</a>
+            <a href="#experience" class="btn btn-outline">View Experience</a>
         </div>
-        <div class="project-card">
-            <h3>Project Two</h3>
-            <p>Short description of what it does.</p>
-            <a href="https://github.com/yourusername/project-two" target="_blank">View Code</a>
+    </div>
+    <div class="hero-img fade-up delay-1">
+        <div class="blob">
+            <img src="images/profile.jpg" alt="Sai Krishna Manepally" onerror="this.style.display='none'">
         </div>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
-    <p><a href="https://github.com/yourusername" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
+<div class="marquee">
+    <div class="marquee-track">
+        <span>Selenium WebDriver</span><span>Appium</span><span>WebDriverIO</span><span>Java</span><span>TypeScript</span><span>Cucumber BDD</span><span>Postman</span><span>Jenkins</span><span>GitHub Actions</span><span>SQL</span>
+        <span>Selenium WebDriver</span><span>Appium</span><span>WebDriverIO</span><span>Java</span><span>TypeScript</span><span>Cucumber BDD</span><span>Postman</span><span>Jenkins</span><span>GitHub Actions</span><span>SQL</span>
+    </div>
+</div>
+
+<section id="about" class="about container">
+    <div class="about-img fade-left">
+        <div class="blob small">
+            <img src="images/profile.jpg" alt="About Sai Krishna" onerror="this.style.display='none'">
+        </div>
+    </div>
+    <div class="about-text fade-right">
+        <p class="tag">WHO AM I ?</p>
+        <h2>I'm Sai Krishna Manepally, an SDET</h2>
+        <p class="desc">Around 6+ years of experience in Software Quality Assurance, Test Automation, and Validation across Web, Mobile, API, and enterprise-scale applications. Strong background across SDLC, STLC, Agile Scrum, and CI/CD environments with continuous testing and delivery practices. Experienced in designing scalable automation frameworks from scratch, including advanced practices like Hardware-in-the-Loop (HIL) testing for FDA-regulated medical device environments.</p>
+        <div class="info-grid">
+            <div><strong>Name:</strong> Sai Krishna Manepally</div>
+            <div><strong>Location:</strong> California, USA</div>
+            <div><strong>Phone:</strong> +1 404-490-5276</div>
+            <div><strong>Email:</strong> <a href="mailto:saikrishnamanepally02@gmail.com">saikrishnamanepally02@gmail.com</a></div>
+        </div>
+        <a href="#" class="btn btn-filled">Download CV</a>
+        <div class="socials">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/Saimanepally" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
 </section>
+
+<section id="experience" class="experience container">
+    <p class="tag center">MY JOURNEY</p>
+    <h2 class="center">Experience & Education</h2>
+    <div class="timeline-grid">
+        <div class="timeline">
+            <h3>Education</h3>
+            <div class="timeline-item fade-up">
+                <h4>Kennesaw State University, GA, USA</h4>
+                <div class="timeline-row"><span>M.S. in Computer Science</span><span>May 2023</span></div>
+                <p>GPA: 3.90</p>
+            </div>
+            <div class="timeline-item fade-up">
+                <h4>SRM University, India</h4>
+                <div class="timeline-row"><span>B.Tech, Electronics & Communication</span><span>May 2019</span></div>
+            </div>
+        </div>
+        <div class="timeline">
+            <h3>Work Experience</h3>
+            <div class="timeline-item fade-up">
+                <h4>Tandem Diabetes Care — SDET</h4>
+                <div class="timeline-row"><span>July 2025 – Present</span></div>
+                <p>Architected a scalable cross-platform mobile automation framework using TypeScript, WebDriverIO, Appium, and BDD. Implemented HIL automation testing for FDA-regulated medical device environments.</p>
+            </div>
+            <div class="timeline-item fade-up">
+                <h4>Tandem Diabetes Care — Test Automation Engineer</h4>
+                <div class="timeline-row"><span>March 2025 – July 2025</span></div>
+                <p>Built a mobile automation framework from scratch, configured a device lab enabling parallel execution across 20+ real devices, and integrated suites into CI/CD via GitHub Actions.</p>
+            </div>
+            <div class="timeline-item fade-up">
+                <h4>Blue Cross Blue Shield — Automation Engineer</h4>
+                <div class="timeline-row"><span>Feb 2024 – Feb 2025</span></div>
+                <p>Developed scalable web and mobile automation frameworks using Selenium, Appium, Java, and C#, with distributed execution via Selenium Grid and Sauce Labs.</p>
+            </div>
+            <div class="timeline-item fade-up">
+                <h4>McKinsey & Company — QA Test Engineer</h4>
+                <div class="timeline-row"><span>April 2023 – Feb 2024</span></div>
+                <p>Implemented Selenium/Java/POM frameworks, conducted API testing for REST/SOAP services, and managed the defect lifecycle in JIRA and HP Quality Center.</p>
+            </div>
+            <div class="timeline-item fade-up">
+                <h4>Cognizant Technology Solutions — Programmer Analyst</h4>
+                <div class="timeline-row"><span>January 2019 – Dec 2021</span></div>
+                <p>Built Selenium/Java/TestNG automation frameworks with Cucumber BDD, integrated with Jenkins CI/CD pipelines for enterprise web applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services container">
+    <p class="tag center">SERVICES</p>
+    <h2 class="center">What I Do</h2>
+    <div class="services-grid">
+        <div class="service-card fade-up"><i class="fa-solid fa-vial"></i><span class="num">01</span><h3>Test Automation</h3><p>Designing scalable frameworks using Selenium, Appium, and WebDriverIO with BDD.</p></div>
+        <div class="service-card fade-up"><i class="fa-solid fa-mobile-screen"></i><span class="num">02</span><h3>Mobile Testing</h3><p>Cross-platform Android & iOS automation across real devices, emulators, and device farms.</p></div>
+        <div class="service-card fade-up"><i class="fa-solid fa-plug"></i><span class="num">03</span><h3>API Testing</h3><p>Validating REST/SOAP services and microservices using Postman and Rest Assured.</p></div>
+        <div class="service-card fade-up"><i class="fa-solid fa-database"></i><span class="num">04</span><h3>Database Testing</h3><p>Backend validation and query analysis across MySQL, PostgreSQL, Oracle, and SQL Server.</p></div>
+        <div class="service-card fade-up"><i class="fa-solid fa-arrows-rotate"></i><span class="num">05</span><h3>CI/CD Integration</h3><p>Building automation pipelines with Jenkins, GitHub Actions, Docker, and Maven.</p></div>
+        <div class="service-card fade-up"><i class="fa-solid fa-bug"></i><span class="num">06</span><h3>Defect Management</h3><p>Root cause analysis, log analysis, and defect lifecycle tracking in JIRA and HP ALM.</p></div>
+    </div>
+</section>
+
+<section id="skills" class="skills container">
+    <p class="tag center">MY TALENT</p>
+    <h2 class="center">Professional Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card"><div class="skill-head"><span>Selenium WebDriver</span><span>90%</span></div><p>Web automation across cross-browser environments.</p><div class="bar"><div class="fill" data-width="90"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>Appium</span><span>90%</span></div><p>Mobile automation for Android & iOS platforms.</p><div class="bar"><div class="fill" data-width="90"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>Java</span><span>85%</span></div><p>Core automation framework development language.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>TypeScript</span><span>85%</span></div><p>Building modern WebDriverIO automation frameworks.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>Cucumber BDD</span><span>85%</span></div><p>Business-readable, maintainable test scenarios.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>API Testing</span><span>85%</span></div><p>REST/SOAP validation using Postman & Rest Assured.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>CI/CD</span><span>80%</span></div><p>Jenkins, GitHub Actions, Docker pipeline integration.</p><div class="bar"><div class="fill" data-width="80"></div></div></div>
+        <div class="skill-card"><div class="skill-head"><span>SQL</span><span>80%</span></div><p>Backend and database validation across major RDBMS.</p><div class="bar"><div class="fill" data-width="80"></div></div></div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio container">
+    <p class="tag center">MY WORK</p>
+    <h2 class="center">Where I've Worked</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-card fade-up"><div class="ph ph1"></div><div class="overlay"><h4>Tandem Diabetes Care</h4></div></div>
+        <div class="portfolio-card fade-up"><div class="ph ph2"></div><div class="overlay"><h4>Blue Cross Blue Shield</h4></div></div>
+        <div class="portfolio-card fade-up"><div class="ph ph3"></div><div class="overlay"><h4>McKinsey & Company</h4></div></div>
+    </div>
+</section>
+
+<section id="contact" class="contact container">
+    <p class="tag center">GET IN TOUCH</p>
+    <h2 class="center">Contact Me</h2>
+    <div class="contact-grid">
+        <div class="contact-info fade-left">
+            <div class="contact-item"><i class="fa-solid fa-phone"></i><div><strong>Call us</strong><p>+1 404-490-5276</p></div></div>
+            <div class="contact-item"><i class="fa-solid fa-envelope"></i><div><strong>Email us</strong><p>saikrishnamanepally02@gmail.com</p></div></div>
+            <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><strong>Location</strong><p>California, USA</p></div></div>
+        </div>
+        <form class="contact-form fade-right" id="contactForm">
+            <div class="form-row">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <input type="text" placeholder="Subject" required>
+            <textarea rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-filled">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-row">
+        <p>&copy; 2026 Sai Krishna Manepally. All Rights Reserved</p>
+        <div class="socials">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/Saimanepally" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
