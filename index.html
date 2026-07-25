@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E.V. Sai Ganesh | Full Stack Developer</title>
+    <title>Sai Krishna Manepally | SDET</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,17 +11,19 @@
 </head>
 <body>
 
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
 <header id="header">
     <nav class="container">
-        <a href="#home" class="logo">MANEPALLY <span>SAI KRISHNA</span></a>
+        <a href="#home" class="logo">SAI KRISHNA<span> MANEPALLY</span></a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certs</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
@@ -29,14 +31,20 @@
 </header>
 
 <section id="home" class="hero container">
+    <canvas id="particles"></canvas>
     <div class="hero-text fade-up">
         <p class="tag">Hello</p>
         <h1>I'm <span>Sai Krishna Manepally</span></h1>
-        <h2>a <span>Software Development Engineer in Test</span></h2>
-        <p class="desc">6+ years of experience in Software Quality Assurance, Test Automation, and Validation of Web, Mobile (iOS & Android), API, and enterprise-scale applications. Skilled in building scalable automation frameworks using Selenium, Appium, WebDriverIO, and BDD across Agile CI/CD environments.</p>
+        <h2>a <span id="typedText"></span></h2>
+        <p class="desc">7+ years of experience in Software Quality Assurance, Test Automation, and Validation of Web, Mobile (iOS & Android), API, and enterprise-scale applications. Skilled in building scalable automation frameworks using Selenium, Appium, WebDriverIO, and BDD across Agile CI/CD environments.</p>
         <div class="btn-row">
             <a href="#contact" class="btn btn-filled">Hire Me</a>
             <a href="#experience" class="btn btn-outline">View Experience</a>
+        </div>
+        <div class="stats-row fade-up">
+            <div><span class="counter" data-target="7">0</span>+<p>Years Experience</p></div>
+            <div><span class="counter" data-target="20">0</span>+<p>Devices Automated</p></div>
+            <div><span class="counter" data-target="5">0</span><p>Companies</p></div>
         </div>
     </div>
     <div class="hero-img fade-up delay-1">
@@ -56,13 +64,13 @@
 <section id="about" class="about container">
     <div class="about-img fade-left">
         <div class="blob small">
-            <img src="images/profile.jpg" alt="About Sai Krishna" onerror="this.style.display='none'">
+            <img src="images/profile.jpg" alt="Sai Krishna Manepally" onerror="this.style.display='none'">
         </div>
     </div>
     <div class="about-text fade-right">
         <p class="tag">WHO AM I ?</p>
         <h2>I'm Sai Krishna Manepally, an SDET</h2>
-        <p class="desc">Around 6+ years of experience in Software Quality Assurance, Test Automation, and Validation across Web, Mobile, API, and enterprise-scale applications. Strong background across SDLC, STLC, Agile Scrum, and CI/CD environments with continuous testing and delivery practices. Experienced in designing scalable automation frameworks from scratch, including advanced practices like Hardware-in-the-Loop (HIL) testing for FDA-regulated medical device environments.</p>
+        <p class="desc">Around 7+ years of experience in Software Quality Assurance, Test Automation, and Validation across Web, Mobile, API, and enterprise-scale applications. Strong background across SDLC, STLC, Agile Scrum, and CI/CD environments with continuous testing and delivery practices. Experienced in designing scalable automation frameworks from scratch, including advanced practices like Hardware-in-the-Loop (HIL) testing for FDA-regulated medical device environments.</p>
         <div class="info-grid">
             <div><strong>Name:</strong> Sai Krishna Manepally</div>
             <div><strong>Location:</strong> California, USA</div>
@@ -117,7 +125,7 @@
             </div>
             <div class="timeline-item fade-up">
                 <h4>Cognizant Technology Solutions — Programmer Analyst</h4>
-                <div class="timeline-row"><span>January 2019 – Dec 2021</span></div>
+                <div class="timeline-row"><span>June 2019 – Dec 2021</span></div>
                 <p>Built Selenium/Java/TestNG automation frameworks with Cucumber BDD, integrated with Jenkins CI/CD pipelines for enterprise web applications.</p>
             </div>
         </div>
@@ -141,55 +149,14 @@
     <p class="tag center">MY TALENT</p>
     <h2 class="center">Professional Skills</h2>
     <div class="skills-grid">
-        <div class="skill-card"><div class="skill-head"><span>Selenium WebDriver</span><span>90%</span></div><p>Web automation across cross-browser environments.</p><div class="bar"><div class="fill" data-width="90"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>Appium</span><span>90%</span></div><p>Mobile automation for Android & iOS platforms.</p><div class="bar"><div class="fill" data-width="90"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>Java</span><span>85%</span></div><p>Core automation framework development language.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>TypeScript</span><span>85%</span></div><p>Building modern WebDriverIO automation frameworks.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>Cucumber BDD</span><span>85%</span></div><p>Business-readable, maintainable test scenarios.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>API Testing</span><span>85%</span></div><p>REST/SOAP validation using Postman & Rest Assured.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>CI/CD</span><span>80%</span></div><p>Jenkins, GitHub Actions, Docker pipeline integration.</p><div class="bar"><div class="fill" data-width="80"></div></div></div>
-        <div class="skill-card"><div class="skill-head"><span>SQL</span><span>80%</span></div><p>Backend and database validation across major RDBMS.</p><div class="bar"><div class="fill" data-width="80"></div></div></div>
-    </div>
-</section>
-
-<section id="certifications" class="certifications container">
-    <p class="tag center">CREDENTIALS</p>
-    <h2 class="center">Licenses & Certifications</h2>
-    <div class="cert-grid">
-        <div class="cert-card fade-up">
-            <i class="fa-brands fa-python"></i>
-            <h4>Python</h4>
-            <p class="cert-issuer">HackerRank</p>
-            <p class="cert-date">Issued Nov 2021</p>
-        </div>
-        <div class="cert-card fade-up">
-            <i class="fa-solid fa-plug"></i>
-            <h4>Postman API Testing</h4>
-            <p class="cert-issuer">Udemy</p>
-        </div>
-        <div class="cert-card fade-up">
-            <i class="fa-solid fa-vial"></i>
-            <h4>Selenium WebDriver with Java</h4>
-            <p class="cert-issuer">Udemy · Basics to Advanced+ Frameworks</p>
-        </div>
-        <div class="cert-card fade-up">
-            <i class="fa-solid fa-database"></i>
-            <h4>SQL</h4>
-            <p class="cert-issuer">HackerRank</p>
-            <p class="cert-date">Issued May 2023</p>
-        </div>
-        <div class="cert-card fade-up">
-            <i class="fa-brands fa-css3-alt"></i>
-            <h4>CSS</h4>
-            <p class="cert-issuer">HackerRank</p>
-            <p class="cert-date">Issued May 2023</p>
-        </div>
-        <div class="cert-card fade-up">
-            <i class="fa-brands fa-google"></i>
-            <h4>Google Analytics Certification</h4>
-            <p class="cert-issuer">Google Digital Academy (Skillshop)</p>
-            <p class="cert-date">Issued Sep 2023</p>
-        </div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>Selenium WebDriver</span><span>90%</span></div><p>Web automation across cross-browser environments.</p><div class="bar"><div class="fill" data-width="90"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>Appium</span><span>90%</span></div><p>Mobile automation for Android & iOS platforms.</p><div class="bar"><div class="fill" data-width="90"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>Java</span><span>85%</span></div><p>Core automation framework development language.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>TypeScript</span><span>85%</span></div><p>Building modern WebDriverIO automation frameworks.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>Cucumber BDD</span><span>85%</span></div><p>Business-readable, maintainable test scenarios.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>API Testing</span><span>85%</span></div><p>REST/SOAP validation using Postman & Rest Assured.</p><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>CI/CD</span><span>80%</span></div><p>Jenkins, GitHub Actions, Docker pipeline integration.</p><div class="bar"><div class="fill" data-width="80"></div></div></div>
+        <div class="skill-card fade-up"><div class="skill-head"><span>SQL</span><span>80%</span></div><p>Backend and database validation across major RDBMS.</p><div class="bar"><div class="fill" data-width="80"></div></div></div>
     </div>
 </section>
 
@@ -200,31 +167,6 @@
         <div class="portfolio-card fade-up"><div class="ph ph1"></div><div class="overlay"><h4>Tandem Diabetes Care</h4></div></div>
         <div class="portfolio-card fade-up"><div class="ph ph2"></div><div class="overlay"><h4>Blue Cross Blue Shield</h4></div></div>
         <div class="portfolio-card fade-up"><div class="ph ph3"></div><div class="overlay"><h4>McKinsey & Company</h4></div></div>
-    </div>
-
-    <p class="tag center" style="margin-top:80px;">SIDE PROJECTS</p>
-    <h2 class="center">Web Development Projects</h2>
-    <div class="portfolio-grid">
-        <div class="portfolio-card fade-up">
-            <div class="ph ph4"></div>
-            <div class="overlay">
-                <div>
-                    <h4>E-Commerce Platform</h4>
-                    <p class="proj-desc">Full-stack online store with product catalog, cart, and checkout flow.</p>
-                    <a href="#" class="proj-link" target="_blank">View Code →</a>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-card fade-up">
-            <div class="ph ph5"></div>
-            <div class="overlay">
-                <div>
-                    <h4>Banking Application</h4>
-                    <p class="proj-desc">Secure banking system with authentication, transactions, and account management.</p>
-                    <a href="#" class="proj-link" target="_blank">View Code →</a>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
