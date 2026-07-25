@@ -116,19 +116,81 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .cert-date { color: #6b6b6b; font-size: 0.8rem; margin-top: 4px; }
 
 .portfolio { padding: 100px 24px; }
-.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 20px; }
-.portfolio-card { position: relative; height: 280px; border-radius: 12px; overflow: hidden; }
-.ph { width: 100%; height: 100%; transition: 0.4s; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-bottom: 20px; }
+
+.portfolio-card {
+    background: var(--bg-alt);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #232323;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    position: relative;
+}
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--red);
+    box-shadow: 0 20px 40px rgba(196,48,60,0.25);
+}
+
+.ph {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.ph::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,0.15) 50%, transparent 60%);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+}
+.portfolio-card:hover .ph::before { transform: translateX(100%); }
+
+.card-icon {
+    font-size: 2.8rem;
+    color: rgba(255,255,255,0.9);
+    transition: transform 0.4s ease;
+    z-index: 1;
+}
+.portfolio-card:hover .card-icon { transform: scale(1.15) rotate(-5deg); }
+
 .ph1 { background: linear-gradient(135deg, #7a0d16, #c4303c); }
 .ph2 { background: linear-gradient(135deg, #4a0509, #a8283a); }
-.ph3 { background: linear-gradient(135deg, #2b0002, #e05a63); }
+.ph3 { background: linear-gradient(135deg, #2b0002, #8a1f2c); }
 .ph4 { background: linear-gradient(135deg, #5c0812, #c4303c); }
 .ph5 { background: linear-gradient(135deg, #300004, #a8283a); }
-.overlay { position: absolute; inset: 0; background: rgba(10,10,10,0.65); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; opacity: 0; transition: 0.3s; }
-.portfolio-card:hover .overlay { opacity: 1; }
-.portfolio-card:hover .ph { transform: scale(1.1); }
-.proj-desc { color: var(--text-dim); font-size: 0.85rem; margin: 6px 0 10px; }
-.proj-link { color: var(--red-light); font-size: 0.85rem; text-decoration: none; font-weight: 600; }
+
+.card-body { padding: 22px; }
+.card-body h4 { font-size: 1.15rem; margin-bottom: 8px; }
+.proj-desc { color: var(--text-dim); font-size: 0.88rem; line-height: 1.6; margin-bottom: 14px; }
+
+.tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.tag-row span {
+    background: rgba(196,48,60,0.12);
+    color: var(--red-light);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(196,48,60,0.3);
+}
+
+.proj-link {
+    color: var(--red-light);
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.3s ease;
+}
+.proj-link:hover { gap: 10px; }
 
 .contact { padding: 100px 24px; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; }
